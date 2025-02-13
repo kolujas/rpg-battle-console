@@ -2,7 +2,6 @@
 
 #ifndef COMBATE_H // Previene la inclusión múltiple
 #define COMBATE_H
-
 #include <string>
 
 const int PLAYER_ONE_HP_START = 100;
@@ -19,5 +18,6 @@ extern int dmg2;
 
 void calculateDamage(int attackerAttack, int defenderDefense, std::string attacker);
 bool showResults();
+void mostrarGanador(int playerOneHP, int playerTwoHP, std::string ganadorP1, std::string ganadorP2);
 
 #endif
